@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>College Hall Booking</h1>
+        <h1>College Hall Booking System</h1>
     </header>
 
     <main>
@@ -31,6 +31,38 @@
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("NABADEEP KUMAR DAS"); // Replace with your EmailJS User ID
+  })();
+
+  document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+  
+    const location = document.getElementById('location').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const details = document.getElementById('details').value;
+
     
+    const templateParams = {
+      location: location,
+      date: date,
+      time: time,
+      details: details,
+    };
+
+    // Send email (user r side t) EmailJS
+    emailjs.send('service_3w6u8zq', 'template_u8z86ze', templateParams)
+      .then(function(response) {
+        document.getElementById('statusMessage').innerText = "Booking request sent successfully!";
+      }, function(error) {
+        document.getElementById('statusMessage').innerText = "Failed to send booking request. Please try again.";
+      });
+  });
+</script>
+
 </body>
 </html>

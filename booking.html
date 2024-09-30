@@ -12,25 +12,32 @@
     </header>
 
     <main>
-        <form id="booking-form">
-            <label for="location">Select Location:</label>
-            <select id="location" name="location" required>
-                <option value="classroom">Classroom</option>
-                <option value="rc">RC</option>
-                <option value="seminar-hall">Seminar Hall</option>
-            </select>
+        <section class="intro">
+            <p>Welcome to the College Hall Booking System. Select the place and time, and submit your request.</p>
+            
+            <form id="booking-form">
+                <label for="location">Select Location:</label>
+                <select id="location" name="location" required>
+                    <option value="classroom">Classroom</option>
+                    <option value="rc">RC</option>
+                    <option value="seminar-hall">Seminar Hall</option>
+                </select>
 
-            <label for="date">Event Date:</label>
-            <input type="date" id="date" name="date" required>
+                <label for="date">Event Date:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="time">Event Time:</label>
-            <input type="time" id="time" name="time" required>
+                <label for="time">Event Time:</label>
+                <input type="time" id="time" name="time" required>
 
-            <label for="details">Event Details:</label>
-            <textarea id="details" name="details" required></textarea>
+                <label for="details">Event Details:</label>
+                <textarea id="details" name="details" required></textarea>
 
-            <button type="submit">Submit Booking</button>
-        </form>
+                <label for="organizer-name">Name of the Organizer:</label>
+                <input type="text" id="organizer-name" name="organizer-name" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
     </main>
 
     <footer>
