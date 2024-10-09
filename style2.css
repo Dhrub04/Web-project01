@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header Styles */
+header-2 {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header-2 h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Intro and Form Styles */
+.intro-new {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.intro-new p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Label and Input Styles */
+label {
+    font-size: 1.1em;
+    color: #333;
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styles */
+button.page-2 {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.page-2:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer-2 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer-2 p {
+    margin: 0;
+}
+
+/* Responsive Design */
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    header-2 h1 {
+        font-size: 1.8em;
+    }
+
+    .intro-new {
+        padding: 20px;
+    }
+
+    button.page-2 {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    header-2 h1 {
+        font-size: 2.2em;
+    }
+
+    .intro-new {
+        padding: 30px;
+    }
+
+    button.page-2 {
+        padding: 12px;
+        font-size: 1.05em;
+    }
+}
