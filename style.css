@@ -1,95 +1,188 @@
-/* Reset and Global Styling */
+/* Reset margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Ensure the html and body take the full height */
 html, body {
     height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Body using flex layout to push the footer down */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure main content expands and pushes footer */
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
 }
 
-/* Header Styling */
-header {
-    background-color: #004d61;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 7rem;
-}
-
-nav a {
-    margin: 0 1rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Main Content Styling */
+/* Main content grows to fill the space */
 main {
-    padding: 2rem;
-    flex-grow: 1; /* Take up remaining vertical space */
+    flex: 1;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.booking-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-form label {
-    display: block;
-    margin: 1rem 0 0.5rem;
-    text-align: left;
-    font-weight: bold;
-}
-
-form input, form select {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-button {
-    background-color: #1cc6f0;
+/* Header styles */
+header {
+    background-color: #007bff;
     color: white;
-    padding: 0.75rem 2rem;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+
+/* Section content */
+.intro h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 0px;
+    margin-top: 150px;
+
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 50px;
+
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
     border: none;
-    border-radius: 18px;
+    border-radius: 25px;
+    font-size: 1.1em;
     cursor: pointer;
-    display: block;
-    margin: 1rem auto;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-    background-color: #008c9e;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #004d61;
+button .intro-new{
+    background-color: #1af148;
     color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer stays at the bottom */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
     text-align: center;
-    padding: 10px 0;
+    font-size: 0.9em;
     width: 100%;
-    /* Remove absolute positioning */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Status message styling */
+#statusMessage {
+    font-size: 1.1em;
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+/* Mobile devices ke liye (up to 600px) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro h2 {
+        font-size: 1.7em;
+    }
+
+    .intro p {
+        font-size: 1.05em;
+    }
+
+    button {
+        padding: 11px 23px;
+        font-size: 1.05em;
+    }
+
+    footer p {
+        font-size: 0.85em;
+    }
+}
+
+/* Desktops (768px and up) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .intro h2 {
+        font-size: 2.2em;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }
