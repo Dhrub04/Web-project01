@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* General Styles */
 * {
     margin: 0;
@@ -7,11 +9,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    background-image: url('http://centrallibrary.cit.ac.in/img/gallery/Discussion%20area-10-05-5114946725314vLJxgzy.jpg');
+    background-size: cover;
+    background-position: center;
     background-color: #f4f7f9;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: auto;
 }
 
 main {
@@ -25,7 +31,7 @@ main {
 
 /* Header Styles */
 header-2 {
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #2E3192, #1BFFFF);
     color: white;
     padding: 20px;
     text-align: center;
@@ -42,9 +48,9 @@ header-2 h1 {
 
 /* Intro and Form Styles */
 .intro-new {
-    background-color: #fff;
+    background-color: #fff2e5;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
@@ -73,7 +79,7 @@ input, select, textarea {
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -84,15 +90,18 @@ textarea {
 
 /* Button Styles */
 button.page-2 {
+    font-family: 'Montserrat', sans-serif;
     background-color: #007bff;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+
 }
+
 
 button.page-2:hover {
     background-color: #0056b3;
@@ -101,8 +110,8 @@ button.page-2:hover {
 
 /* Footer Styles */
 footer-2 {
-    background-color: #333;
-    color: white;
+    background-color: #dcd8d881;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
