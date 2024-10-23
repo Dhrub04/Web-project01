@@ -74,16 +74,7 @@ button{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button .intro-new{
-    background-color: #1af148;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+
 button:hover{
     background-color: #0056b3;
     transform: scale(1.05);
@@ -100,6 +91,7 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
+    
 }
 
 footer p {
