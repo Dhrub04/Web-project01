@@ -4,7 +4,7 @@
 
 body::before {
     font-family: 'Roboto Slab', sans-serif; /* Correct font applied */
-    background-image: url('https://recruitment.cit.ac.in/img/slide_cit.jpg'); /* Add your image path here */
+    background-image: url('CITadminis.jpeg'); /* Add your image path here */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
