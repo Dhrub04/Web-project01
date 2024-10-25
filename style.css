@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Agdasima:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+body::before {
+    font-family: 'Roboto Slab', sans-serif; /* Correct font applied */
+    background-image: url('CITadminis.jpeg'); /* Add your image path here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background while scrolling */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6; /* Set background opacity to 0.5 */
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+
 /* Reset margin and padding */
 * {
     margin: 0;
@@ -17,7 +38,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
-    font-family: 'Arial', sans-serif;
     background-color: #f4f7f9;
     color: #333;
 }
@@ -31,8 +51,8 @@ main {
 
 /* Header styles */
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #328bf7;
+    color: rgba(255, 255, 255, 0.991);
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,26 +64,23 @@ header h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-
 }
 
 /* Section content */
 .intro h2 {
     font-size: 1.8em;
-    color: #007bff;
+    color: #487ef3;
     margin-bottom: 0px;
     margin-top: 150px;
-
 }
 
 .intro p {
     font-size: 1.1em;
-    color: #555;
+    color: #f3ecec;
     margin-bottom: 50px;
-
 }
 
-button{
+button {
     background-color: #007bff;
     color: white;
     padding: 12px 25px;
@@ -74,8 +91,7 @@ button{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-button:hover{
+button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
@@ -91,7 +107,6 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
-    
 }
 
 footer p {
@@ -107,7 +122,6 @@ footer p {
 }
 
 /* Responsive Design */
-/* Mobile devices ke liye (up to 600px) */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
@@ -128,53 +142,5 @@ footer p {
 
     footer p {
         font-size: 0.8em;
-    }
-}
-
-/* Tablets (600px to 768px) */
-@media (min-width: 600px) and (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    .intro h2 {
-        font-size: 1.7em;
-    }
-
-    .intro p {
-        font-size: 1.05em;
-    }
-
-    button {
-        padding: 11px 23px;
-        font-size: 1.05em;
-    }
-
-    footer p {
-        font-size: 0.85em;
-    }
-}
-
-/* Desktops (768px and up) */
-@media (min-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    .intro h2 {
-        font-size: 2.2em;
-    }
-
-    .intro p {
-        font-size: 1.2em;
-    }
-
-    button {
-        padding: 12px 30px;
-        font-size: 1.2em;
-    }
-
-    footer p {
-        font-size: 1em;
     }
 }
