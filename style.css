@@ -3,53 +3,53 @@
 
 
 body::before {
-    font-family: 'Roboto Slab', sans-serif; /* Correct font applied */
-    background-image: url('CITadminis.jpeg'); /* Add your image path here */
+    font-family: 'Roboto Slab', sans-serif; 
+    background-image: url('CITadminis.jpeg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Fixed background while scrolling */
+    background-attachment: fixed; 
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.6; /* Set background opacity to 0.5 */
-    z-index: -1; /* Ensure the background stays behind the content */
+    opacity: 0.6; 
+    z-index: -1; 
 }
 
-/* Reset margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure the html and body take the full height */
+
 html, body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
-/* Body using flex layout to push the footer down */
+
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+    min-height: 100vh; 
     background-color: #f4f7f9;
     color: #333;
 }
 
-/* Main content grows to fill the space */
+
 main {
     flex: 1;
     padding: 40px 20px;
     text-align: center;
 }
 
-/* Header styles */
+
 header {
     background-color: #328bf7;
     color: rgba(255, 255, 255, 0.991);
@@ -66,7 +66,7 @@ header h1 {
     letter-spacing: 1.5px;
 }
 
-/* Section content */
+
 .intro h2 {
     font-size: 1.8em;
     color: #487ef3;
@@ -76,12 +76,12 @@ header h1 {
 
 .intro p {
     font-size: 1.1em;
-    color: #f3ecec;
+    color: blue;
     margin-bottom: 50px;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #5598df;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -96,7 +96,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Footer stays at the bottom */
+
 footer {
     background-color: #333;
     color: white;
@@ -113,7 +113,7 @@ footer p {
     margin: 0;
 }
 
-/* Status message styling */
+
 #statusMessage {
     font-size: 1.1em;
     color: green;
@@ -121,7 +121,7 @@ footer p {
     text-align: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
