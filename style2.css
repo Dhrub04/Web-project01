@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ main {
     text-align: center;
 }
 
-/* Header Styles */
+
 header-2 {
     background-image: linear-gradient(to right, #2E3192, #1BFFFF);
     color: white;
@@ -46,7 +46,7 @@ header-2 h1 {
     letter-spacing: 2px;
 }
 
-/* Intro and Form Styles */
+
 .intro-new {
     background-color: #fff2e5;
     padding: 40px;
@@ -68,7 +68,7 @@ form {
     gap: 15px;
 }
 
-/* Form Label and Input Styles */
+
 label {
     font-size: 1.1em;
     color: #333;
@@ -88,7 +88,7 @@ textarea {
     min-height: 100px;
 }
 
-/* ButtonStyles */
+
 button.page-2 {
     font-family: 'Montserrat', sans-serif;
     background-color: #007bff;
@@ -108,7 +108,7 @@ button.page-2:hover {
     transform: scale(1.05);
 }
 
-/* Footer Styles */
+
 footer-2 {
     background-color: #dcd8d881;
     color: rgb(0, 0, 0);
@@ -125,8 +125,7 @@ footer-2 p {
     margin: 0;
 }
 
-/* Responsive Design */
-/* Mobile devices (up to 600px) */
+
 @media (max-width: 600px) {
     header-2 h1 {
         font-size: 1.8em;
@@ -142,7 +141,7 @@ footer-2 p {
     }
 }
 
-/* Tablets (600px to 768px) */
+
 @media (min-width: 600px) and (max-width: 768px) {
     header-2 h1 {
         font-size: 2.2em;

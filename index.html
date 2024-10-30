@@ -5,10 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Booking System</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #86a0f5; 
+        }
+        
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .college-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-left: 10px; /* Space between logo and title */
+        }
+
+        .logo {
+            height: 50px; 
+            width: 50px; 
+            background-image: url('Web-project01/CIT LOGO photo.jpg');
+            background-size: cover;
+            display: inline-block; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #3e8be2;
+        }
+      
+        main {
+            display: flex;
+            justify-content: flex-end; 
+            padding: 20px;
+        }
+
+        .intro {
+            max-width: 600px; 
+            text-align: left; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #3e8be2;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>College Hall Booking System</h1>
+        <div class="left-section">
+            <div class="logo"></div>
+            <div class="college-title">CENTRAL INSTITUTE OF TECHNOLOGY, KOKRAJHAR</div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
     </header>
 
     <main>
@@ -17,45 +89,43 @@
             <p>Welcome to the College Hall Booking System.</p>
             <p>The College Hall Booking System is your one-stop solution for reserving venues and halls within the campus. Whether you're organizing a seminar, a cultural event, a workshop, or a departmental meeting, our easy-to-use platform streamlines the process of finding and booking the perfect space. Designed to cater to the needs of students, faculty, and staff, the system provides real-time availability updates, booking confirmations, and notifications to make event planning more efficient.</p>
             <button onclick="window.location.href='booking.html'">Request to book an Event</button>
+            <button onclick="window.location.href='contactus.html'">Book through Google form</button>
         </section>
     </main>
 
-   
-   <footer>
-        <p>© 2024 College Hall Booking System | All Rights Reserved<p>
+    <footer>
+        <p>© 2024 College Hall Booking System | All Rights Reserved</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    emailjs.init("x_BWV8NwevmkUVZfo"); // Replace with your EmailJS User ID
-  })();
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("x_BWV8NwevmkUVZfo"); // Replace with your EmailJS User ID
+      })();
 
-  document.getElementById('bookingForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+      document.getElementById('bookingForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
 
-  
-    const location = document.getElementById('location').value;
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const details = document.getElementById('details').value;
+        const location = document.getElementById('location').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        const details = document.getElementById('details').value;
 
-    
-    const templateParams = {
-      location: location,
-      date: date,
-      time: time,
-      details: details,
-    };
+        const templateParams = {
+          location: location,
+          date: date,
+          time: time,
+          details: details,
+        };
 
-    // Send email (user r side t) EmailJS
-    emailjs.send('service_3w6u8zq', 'template_u8z86ze', templateParams)
-      .then(function(response) {
-        document.getElementById('statusMessage').innerText = "Booking request sent successfully!";
-      }, function(error) {
-        document.getElementById('statusMessage').innerText = "Failed to send booking request. Please try again.";
+        // Send email (user side) using EmailJS
+        emailjs.send('service_3w6u8zq', 'template_u8z86ze', templateParams)
+          .then(function(response) {
+            document.getElementById('statusMessage').innerText = "Booking request sent successfully!";
+          }, function(error) {
+            document.getElementById('statusMessage').innerText = "Failed to send booking request. Please try again.";
+          });
       });
-  });
-</script>
-
+    </script>
 </body>
 </html>
