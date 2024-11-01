@@ -1,3 +1,14 @@
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
         event.preventDefault();
