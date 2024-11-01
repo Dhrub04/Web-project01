@@ -28,7 +28,7 @@ main {
 }
 
 
-header-2 {
+header {
     background-color: #305ae4;
     color: white;
     padding: 20px;
@@ -36,7 +36,7 @@ header-2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header-2 h1 {
+header h1 {
     font-size: 2.5em;
     margin: 0;
     font-weight: bold;
@@ -107,10 +107,10 @@ button.page-2:hover {
 }
 
 
-footer-2 {
-    background-color: #dcd8d881;
-    color: rgb(0, 0, 0);
-    padding: 20px;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
     text-align: center;
     font-size: 0.9em;
     width: 100%;
@@ -119,7 +119,7 @@ footer-2 {
     left: 0;
 }
 
-footer-2 p {
+footer p {
     margin: 0;
 }
 

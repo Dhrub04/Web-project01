@@ -1,10 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
-
-
-
 body::before {
     font-family: 'Roboto Slab', sans-serif; 
     background-image: url('public/home/CITadminis.jpeg'); 
@@ -18,12 +14,11 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.6; 
+    opacity: 0.4;
     z-index: -1; 
 }
 
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +34,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -85,7 +80,6 @@ header {
     color: #333;
 }
 
-/* Hamburger Menu for Mobile */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -99,12 +93,12 @@ header {
     background-color: #fff;
 }
 
-/* Mobile Menu */
+
 .nav-links.show {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 60px; 
     right: 20px;
     background-color: #305ae4;
     width: 150px;
@@ -112,8 +106,7 @@ header {
     border-radius: 8px;
 }
 
-/* Main content */
-/* Main content */
+
 main {
     flex: 1;
     display: flex;
@@ -126,9 +119,7 @@ main {
     max-width: 600px;
     text-align: center;
     padding: 20px;
-    
     border-radius: 10px;
-    
 }
 
 .intro h2 {
@@ -148,7 +139,6 @@ main {
     border: none;
     border-radius: 15px;
     background-color: #4169E1;
-
     color: #fff;
     font-size: 1em;
     cursor: pointer;
@@ -190,18 +180,18 @@ footer p {
     height: 24px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; 
     }
     .hamburger {
-        display: flex;
+        display: flex; 
     }
 }
 
 @media (min-width: 768px) {
     .nav-links.show {
-        display: flex;
+        display: flex; 
     }
 }

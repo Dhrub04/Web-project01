@@ -1,55 +1,22 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
+function sendBookingEmail() {
+    const location = document.getElementById("location").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const details = document.getElementById("details").value;
+    const organizerName = document.getElementById("organizer-name").value;
+
+    const subject = encodeURIComponent(`Booking Request for ${location}`);
+    const body = encodeURIComponent(`Event Booking Details:\n\n` +
+        `Location: ${location}\n` +
+        `Date: ${date}\n` +
+        `Time: ${time}\n` +
+        `Details: ${details}\n` +
+        `Organizer Name: ${organizerName}\n` +
+        `\nPlease confirm the booking.\nThank you!`);
+
+    const authorityEmail = "nabadeep.dev@gmail.com"; // Email address of the authority
+
+    const mailtoLink = `mailto:${authorityEmail}?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink; 
 }
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('bookingForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const location = document.getElementById('location').value;
-        const date = document.getElementById('date').value;
-        const time = document.getElementById('time').value;
-        const details = document.getElementById('details').value;
-        const organizerName = document.getElementById('organizer-name').value;
-
-        fetch('http://localhost:3000', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ location, date, time, details, organizerName })
-        })
-        .then(response => response.json())
-        .then(data => {
-            const statusMessage = document.getElementById('statusMessage');
-            if (data.message === 'Booking request sent successfully') {
-                statusMessage.innerText = data.message;
-                statusMessage.style.color = 'green';
-                statusMessage.style.opacity = 1;
-                document.getElementById('bookingForm').reset();
-
-                setTimeout(() => {
-                    statusMessage.style.opacity = 0;
-                }, 3000);
-            } else {
-                throw new Error(data.message);
-            }
-        })
-        .catch(error => {
-            const statusMessage = document.getElementById('statusMessage');
-            statusMessage.innerText = "Failed to send booking request. Please try again.";
-            statusMessage.style.color = "red";
-            statusMessage.style.opacity = 1;
-
-            setTimeout(() => {
-                statusMessage.style.opacity = 0;
-            }, 3000);
-            console.error('Error:', error);
-        });
-    });
-});

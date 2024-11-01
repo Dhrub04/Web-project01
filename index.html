@@ -10,19 +10,20 @@
     <header>
         <div class="left-section">
             <div class="logo"></div>
-            <span class="college-title">CENTRAL INSTITUTE OF TECHNOLOGY, KOKRAJHAR</span>
+            <div class="college-title">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</div>
         </div>
-        <nav class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
             <a href="booking.html">About</a>
-            <a href="contactus.html">Contact</a>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
+            <a href="contactus.html">Contact Us</a>
+        </div>
+        <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </header>
+    
 
     <main>
         <section class="intro">
@@ -31,7 +32,7 @@
             <p>The College Hall Booking System is your one-stop solution for reserving venues and halls within the campus. Whether you're organizing a seminar, a cultural event, a workshop, or a departmental meeting, our platform streamlines the process of finding and booking the perfect space.</p>
             <button onclick="window.location.href='booking.html'">Request to Book an Event</button>
             <button onclick="window.location.href='contactus.html'">Book through Google Form</button>
-            <button onclick="window.location.href='contactus.html'">Share your event with Students</button>
+            <button onclick="window.location.href='share.html'">Share your event with Students</button>
         </section>
     </main>
 
@@ -50,10 +51,6 @@
         <p>© 2024 College Hall Booking System | All Rights Reserved</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById("navLinks").classList.toggle("show");
-        }
-    </script>
+    <script src="script3.js"></script>
 </body>
 </html>
