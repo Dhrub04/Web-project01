@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-    color: rgb(234, 15, 99);
+    color: rgb(219, 18, 142);
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
@@ -81,11 +81,11 @@ header h1 {
 }
 
 .member-photo {
-    width: 100px; /* Adjust size as needed */
+    width: 100px; 
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Optional border */
+    border: 2px solid rgba(255, 255, 255, 0.2); 
 }
 
 
