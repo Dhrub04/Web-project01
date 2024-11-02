@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header-2>
+    <header>
         <h1>Book Your Event</h1>
-    </header-2>
+    </header>
 
     <main>
         <section class="intro-new">
@@ -35,16 +35,24 @@
                 <label for="organizer-name">Name of the Organizer:</label>
                 <input type="text" id="organizer-name" name="organizer-name" required>
 
-                <button class="page-2" type="submit">Submit Booking</button>
+                <button class="page-2" onclick="sendBookingEmail()">Submit Booking</button>
                 <button class="page-2" onclick="window.location.href='index.html'">Return to Homepage</button>
+                <button class="page-2" onclick="window.location.href='contactus.html'">Contact Us</button>
             </form>
         </section>
     </main>
 
-    <footer-2>
+    <footer>
         <p>© 2024 College Hall Booking System</p>
-    </footer-2>
+        <p>Design and Developed by </p>
+        <a href="https://github.com/your-profile" target="_blank">
+            <img src="public/footer/images-removebg-preview.png" alt="GitHub" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.instagram.com/your-profile/" target="_blank">
+            <img src="public/footer/icons8-instagram-24.png" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+    </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
