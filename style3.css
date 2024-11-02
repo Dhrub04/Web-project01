@@ -88,6 +88,7 @@ header h1 {
 }
 
 .member-photo {
+    margin-top: 2vh;
     width: 100px; 
     height: 100px;
     object-fit: cover;
@@ -100,7 +101,7 @@ header h1 {
     padding: 1.5em;
     color: #fff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.1);
+    
     border-radius: 0 0 12px 12px;
 }
 

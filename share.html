@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Event News</title>
     <link rel="stylesheet" href="style4.css">
+
 </head>
 <body>
+
+   
+    <h1 class="event-headline">Share Event News</h1>
     <div class="container">
-        <h1>Share Event News</h1>
+        <h1>If you want to share the event with the fellow mates, please slecet the option and share via mail or whatsapp......</h1>
         <form id="eventForm">
             <div class="form-group">
                 <label for="event-title">Event Title:</label>
@@ -32,6 +36,50 @@
         <p id="statusMessage" class="status-message"></p>
     </div>
 
+    <div class="departments">
+        <div class="department-box" onclick="openDepartment('cse')">CSE</div>
+        <div class="department-box" onclick="openDepartment('cs')">Civil</div>
+        <div class="department-box" onclick="openDepartment('ie')">IE</div>
+        <div class="department-box" onclick="openDepartment('ece')">ECE</div>
+        <div class="department-box" onclick="openDepartment('fet')">FET</div>
+        <div class="department-box" onclick="openDepartment('mcd')">MCD</div>
+    </div>
+
+    <script>
+        function openDepartment(department) {
+            // Logic to open the department's class representative number
+            alert('Opening ' + department + ' department class representative number');
+        }
+    </script>
+
+    <style>
+        .departments {
+            
+            
+            justify-content: center;
+            margin: 20px 0;
+        display: flex;
+            align-items: center;
+        }
+        .department-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #4a90e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition:  0.3s;
+            margin-left: 2vw;
+            
+        }
+        .department-box:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+
     <script src="script2.js"></script>
 
     <footer>
@@ -39,11 +87,12 @@
 
         <p>Design and Developed by </p>
     <a href="https://github.com/your-profile" target="_blank">
-        <img src="public/footer/images-removebg-preview.png" alt="GitHub" style="width: 24px; height: 24px;">
+        <img src="" alt="GitHub" style="width: 24px; height: 24px;">
     </a>
     <a href="https://www.instagram.com/your-profile/" target="_blank">
         <img src="public/footer/icons8-instagram-24.png" alt="Instagram" style="width: 24px; height: 24px;">
     </a>
     </footer>
+   
 </body>
 </html>
