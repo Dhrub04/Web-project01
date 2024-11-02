@@ -9,11 +9,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function changeFont(button) {
-    // Toggle between two font styles
-    if (button.style.fontFamily === "Poppins") {
-        button.style.fontFamily = "Poppins, san-serif";
-    } else {
-        button.style.fontFamily = "Poppins, sans-serif";
-    }
-}
