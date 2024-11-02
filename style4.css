@@ -1,11 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 
 .container {
     max-width: 500px;
@@ -15,30 +13,49 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 2px solid #4a90e2;
+    
+}
+
+.container h1 {
+    color: #616df2;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.event-headline {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background: linear-gradient(90deg, #4a90e2, #616df2);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    margin:  auto; 
 }
 
 
-.container h1 {
-    color: #4a90e2;
-    font-size: 24px;
-    margin-bottom: 20px;
+.event-headline:hover {
+    background: linear-gradient(90deg, #616df2, #4a90e2); 
+    color: #ffffff;
+    transform: scale(1);
 }
 
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
-
 label {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     margin-bottom: 8px;
 }
-
 
 input[type="text"],
 textarea {
@@ -75,25 +92,23 @@ textarea:focus {
     accent-color: #4a90e2;
 }
 
-
 .submit-btn {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    color: #ffffff;
+    color: #191818;
     background-color: #4a90e2;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 10px;
 }
 
 .submit-btn:hover {
-    background-color: #357ab8;
+    background-color: #ebf1f7;
     transform: translateY(-2px);
 }
-
 
 .return-home {
     width: 100%;
@@ -102,7 +117,7 @@ textarea:focus {
     color: #4a90e2;
     background-color: #ffffff;
     border: 2px solid #4a90e2;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     margin-top: 10px;
@@ -114,33 +129,20 @@ textarea:focus {
     transform: translateY(-2px);
 }
 
-
 .status-message {
     margin-top: 15px;
     font-size: 14px;
     color: #4a90e2;
 }
 
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-size: 0.9em;
     width: 100%;
-    
+    position: fixed; /* Ensures the footer stays at the bottom */
     bottom: 0;
     left: 0;
-    margin-top: 30px;
-    
 }
-
