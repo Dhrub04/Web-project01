@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +11,21 @@
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #fcf4da;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 12px 12px 12px rgba(6, 6, 6, 0.1);
     text-align: center;
     
 }
 
 .container h1 {
-    color: #616df2;
+    font-family: 'Poppins' ;
+    color: #305ae4;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .event-headline {
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
@@ -96,9 +100,9 @@ textarea:focus {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    color: #191818;
-    background-color: #4a90e2;
-    border: none;
+    color: #ffffff;
+    border-color: #4169E1;
+    background-color: #4169E1;
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -106,7 +110,9 @@ textarea:focus {
 }
 
 .submit-btn:hover {
-    background-color: #ebf1f7;
+    background-color: #ffffff;
+    color: #4169E1;
+    border: 2px solid #4169E1;
     transform: translateY(-2px);
 }
 
@@ -114,9 +120,9 @@ textarea:focus {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    color: #4a90e2;
+    color: #4169E1;
     background-color: #ffffff;
-    border: 2px solid #4a90e2;
+    border: 2px solid #4169E1;
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
@@ -124,7 +130,7 @@ textarea:focus {
 }
 
 .return-home:hover {
-    background-color: #4a90e2;
+    background-color: #4169E1;
     color: #ffffff;
     transform: translateY(-2px);
 }
