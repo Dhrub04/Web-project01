@@ -140,6 +140,61 @@ textarea:focus {
     font-size: 14px;
     color: #4a90e2;
 }
+.infor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 10px 2;
+    align-items: center;
+    color: rgb(63, 15, 238);
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 2px;
+}
+
+.departments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 20px 0;
+    align-items: center;
+}
+.department-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px; 
+}
+.department-box:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .department-box {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .department-box {
+        width: 60px;
+        height: 60px;
+        font-size: 14px; 
+    }
+}
+
+
 
 footer {
     background-color: #333;
@@ -148,7 +203,7 @@ footer {
     text-align: center;
     font-size: 0.9em;
     width: 100%;
-    position: fixed; /* Ensures the footer stays at the bottom */
+    position: relative; 
     bottom: 0;
     left: 0;
 }
