@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Agdasima:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
 * {
@@ -99,13 +100,13 @@ header h1 {
 
 .member-info {
     padding: 1.5em;
-    color: #fff;
+    color: #000000;
     text-align: center;
-    
     border-radius: 0 0 12px 12px;
 }
 
 .member-info h3 {
+    font-family: 'Poppins', serif;
     font-size: 1.3em;
     color: #ffffff;
     margin-bottom: 0.5em;
@@ -114,6 +115,7 @@ header h1 {
 }
 
 .member-info p {
+    font-family: 'Poppins', serif;
     font-size: 0.9em;
     margin: 0.3em 0;
 }
