@@ -30,22 +30,34 @@ main {
 
 
 header {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #305ae4;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center aligns both elements */
+    gap: 10px; /* Space between logo and h1 */
+}
+
 header h1 {
-    font-size: 2.5em;
+    font-size: 1.7em;
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('public/home/cit-logo (1).png');
+    background-size: cover;
+}
 
 .intro-new {
     background-color: #fff2e5;
