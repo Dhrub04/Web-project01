@@ -18,7 +18,6 @@ body::before {
     z-index: -1; 
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -34,14 +33,16 @@ body {
     min-height: 100vh;
 }
 
-
 header {
+    position: relative; 
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #305ae4;
     color: #fff;
+    width: 100%;
 }
 
 .left-section {
@@ -60,6 +61,7 @@ header {
     height: 50px;
     background-image: url('public/home/cit-logo (1).png');
     background-size: cover;
+    background-position: center;
 }
 
 .nav-links {
@@ -93,7 +95,6 @@ header {
     background-color: #fff;
 }
 
-
 .nav-links.show {
     display: flex;
     flex-direction: column;
@@ -106,7 +107,6 @@ header {
     border-radius: 8px;
 }
 
-
 main {
     height: auto;
     flex: 1;
@@ -114,6 +114,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
 }
 
 .intro {
@@ -152,7 +153,6 @@ main {
     transform: scale(1.04);
 }
 
-
 footer {
     background-color: #2d3538;
     color: white;
@@ -181,18 +181,72 @@ footer p {
     height: 24px;
 }
 
+/* Responsive Breakpoints */
 
+/* Mobile view */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; 
+        display: none; /* Hide nav links on smaller screens */
     }
+    
     .hamburger {
-        display: flex; 
+        display: flex; /* Show hamburger menu on small screens */
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .intro button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+    
+    main {
+        padding: 10px;
     }
 }
 
-@media (min-width: 768px) {
-    .nav-links.show {
-        display: flex; 
+/* Tablet view */
+@media (max-width: 1024px) {
+    .college-title {
+        font-size: 1.1em;
+    }
+    
+    .intro h2 {
+        font-size: 1.75em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .intro button {
+        padding: 8px 18px;
+    }
+    
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) {
+    .intro h2 {
+        font-size: 2.2em;
+    }
+    
+    .intro p {
+        font-size: 1.2em;
+    }
+
+    .intro button {
+        font-size: 1.1em;
+        padding: 12px 25px;
     }
 }
