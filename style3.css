@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Agdasima:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-
 body {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     background-color: #e0dcd3;
     min-height: 100vh;
 }
-
 
 header {
     width: 100%;
@@ -29,7 +26,6 @@ header {
 }
 
 main.content-container {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +35,6 @@ main.content-container {
     margin: auto;
     flex-grow: 1;
 }
-
-
 
 .left-section {
     display: flex;
@@ -91,7 +85,6 @@ main.content-container {
     background-color: #fff;
 }
 
-
 .nav-links.show {
     display: flex;
     flex-direction: column;
@@ -103,7 +96,6 @@ main.content-container {
     padding: 10px;
     border-radius: 8px;
 }
-  
 
 .contact-us-section {
     padding: 2em;
@@ -124,24 +116,12 @@ main.content-container {
     font-weight: bold;
 }
 
-.contact-us-section h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 1em;
-    
-}
-
-
 .member-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5em;
 }
-
-
-
 
 .member-card {
     width: 260px;
@@ -166,27 +146,11 @@ main.content-container {
     border: 2px solid rgba(255, 255, 255, 0.2); 
 }
 
-
 .member-info {
     padding: 1.5em;
     color: #000000;
     text-align: center;
     border-radius: 0 0 12px 12px;
-}
-
-.member-info h3 {
-    font-family: 'Poppins', serif;
-    font-size: 1.3em;
-    color: #ffffff;
-    margin-bottom: 0.5em;
-    font-weight: 600;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-.member-info p {
-    font-family: 'Poppins', serif;
-    font-size: 0.9em;
-    margin: 0.3em 0;
 }
 
 .contact-links {
@@ -237,11 +201,84 @@ footer {
     text-align: center;
     font-size: 0.9em;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Styles */
+
+/* Tablets (768px and up) */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .college-title {
+        font-size: 1em;
+    }
+
+    .contact-us-section h2 {
+        font-size: 2em;
+    }
+
+    .member-card {
+        width: 80%;
+    }
+}
+
+/* Small tablets and larger smartphones (480px and up) */
+@media (max-width: 768px) {
+    .college-title {
+        font-size: 1em;
+    }
+
+    .contact-us-section h2 {
+        font-size: 1.8em;
+    }
+
+    .member-card {
+        width: 90%;
+    }
+
+    .return-home {
+        padding: 0.6em 1.5em;
+        font-size: 0.9em;
+    }
+}
+
+/* Small Smartphones (up to 480px) */
+@media (max-width: 480px) {
+    .college-title {
+        font-size: 0.9em;
+    }
+
+    .contact-us-section h2 {
+        font-size: 1.5em;
+    }
+
+    .return-home {
+        padding: 0.5em 1.2em;
+        font-size: 0.8em;
+    }
+}
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    .content-container {
+        padding: 4em;
+    }
+
+    .contact-us-section h2 {
+        font-size: 3em;
+    }
+
+    .member-card {
+        width: 300px;
+    }
 }
