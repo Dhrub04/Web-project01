@@ -43,7 +43,7 @@ main.content-container {
 }
 
 .college-title {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -178,22 +178,24 @@ main.content-container {
 }
 
 .return-home {
-    padding: 0.8em 2em;
-    font-size: 1em;
-    background-color: #4169E1;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
     color: #ffffff;
-    border: none;
-    border-radius: 25px;
+    background-color: #4169E1;
+    border-radius: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
 }
 
 .return-home:hover {
     background-color: #ffffff;
-    color: #333;
-    transform: scale(1.05);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    color: #4169E1;
+    border: 2px solid #4169E1;
+    transform: translateY(-2px);
 }
+
 
 footer {
     background-color: #333;

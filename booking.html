@@ -32,18 +32,21 @@
                 <label for="date">Event Date:</label>
                 <input type="date" id="date" name="date" required>
 
-                <label for="time">Event Time:</label>
-                <input type="time" id="time" name="time" required>
+                <label for="start-time">Event Start Time:</label>
+                <input type="time" id="start-time" name="start-time" required>
+
+                <label for="end-time">Event End Time:</label>
+                <input type="time" id="end-time" name="end-time" required>
 
                 <label for="details">Event Details:</label>
                 <textarea id="details" name="details" required></textarea>
 
-                <label for="organizer-name">Name of the Organizer:</label>
+                <label for="organizer-name">Name of the Organizer(s):</label>
                 <input type="text" id="organizer-name" name="organizer-name" required>
 
-                <button class="page-2" onclick="sendBookingEmail()">Submit Booking</button>
-                <button class="page-2" onclick="window.location.href='index.html'">Return to Homepage</button>
-                <button class="page-2" onclick="window.location.href='contactus.html'">Contact Us</button>
+                <button type="button" class="page-2" onclick="sendBookingEmail()">Submit Booking</button>
+                <button type="button" class="page-2" onclick="window.location.href='index.html'">Return to Homepage</button>
+                <button type="button" class="page-2" onclick="window.location.href='contactus.html'">Contact Us</button>
             </form>
         </section>
     </main>
@@ -54,7 +57,7 @@
         <a href="https://github.com/NABADEEP069" target="_blank">
             <img src="public/footer/icons8-github-64.png" alt="GitHub" style="width: 24px; height: 24px;">
         </a>
-        <a href="https://www.linkedin.com/feed/" target="_blank">
+        <a href="https://www.linkedin.com/in/dhrub-kr-basumatary-286004292/" target="_blank">
             <img src="public/footer/icons8-linkedin-50.png" alt="Instagram" style="width: 24px; height: 24px;">
         </a>
     </footer>
