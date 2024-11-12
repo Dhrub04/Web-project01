@@ -1,4 +1,4 @@
-# Web Project 01
+# CITK-Eventspace
 
 A responsive and visually appealing static website showcasing front-end development skills with animations, interactivity, and a modern layout.
 
