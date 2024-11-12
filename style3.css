@@ -117,7 +117,16 @@ main.content-container {
     font-weight: bold;
 }
 
+.contact-us-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
 .member-card-container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -125,6 +134,7 @@ main.content-container {
 }
 
 .member-card {
+    
     width: 260px;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     border-radius: 18px;
@@ -148,6 +158,7 @@ main.content-container {
 }
 
 .member-info {
+    font-family: 'Poppins', sans-serif;
     padding: 1.5em;
     color: #000000;
     text-align: center;
