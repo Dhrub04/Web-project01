@@ -24,9 +24,13 @@
             <form id="booking-form">
                 <label for="location">Select Location:</label>
                 <select id="location" name="location" required>
-                    <option value="classroom">Classroom</option>
-                    <option value="rc">RC</option>
-                    <option value="seminar-hall">Seminar Hall</option>
+                    <option value="classroom">Classroom(G1)</option>
+                    <option value="classroom">Classroom(G3)</option>
+                    <option value="rc">Recreation Centre</option>
+                    <option value="seminar-hall">BKB Seminar Hall</option>
+                    <option value="auditorium">Auditorium</option>
+                   
+
                 </select>
 
                 <label for="date">Event Date:</label>
@@ -44,7 +48,7 @@
                 <label for="organizer-name">Name of the Organizer(s):</label>
                 <input type="text" id="organizer-name" name="organizer-name" required>
 
-                <button type="button" class="page-2" onclick="sendBookingEmail()">Submit Booking(Via Outlook)</button>
+                <button type="button" class="page-2" onclick="sendBookingEmail()">Submit Booking</button>
                 <button type="button" class="page-2" onclick="window.location.href='index.html'">Return to Homepage</button>
                 <button type="button" class="page-2" onclick="window.location.href='contactus.html'">Contact Us</button>
             </form>
